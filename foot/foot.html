@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<div class="footer">
+			<div class="main">
+				<dl>
+					<dt>一加产品</dt>
+					<dd><a href="#">OnePlus 6</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+				</dl>
+				<dl>
+					<dt>热门活动</dt>
+					<dd><a href="#">推荐有礼 </a></dd>
+					<dd><a href="#">以旧换新</a></dd>
+					<dd><a href="#">Shot on OnePlus</a></dd>
+					
+				</dl>
+				<dl>
+					<dt>一加产品</dt>
+					<dd><a href="#">OnePlus 6</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+				</dl>
+				<dl>
+					<dt>一加产品</dt>
+					<dd><a href="#">OnePlus 6</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+					<dd><a href="#">OnePlus 5T</a></dd>
+				</dl>
+				
+				<div class="foot_right">
+					<h1><a href="#">400-888-1111</a></h1>
+					<span><a href="#">在线客服</a><p></p></span>
+					<p>周一至周日 9:00 - 22:00</p>
+					<i>
+						<a href="#">微信</a>
+						<a href="#">新浪</a>
+					</i>
+				</div>
+			</div>
+			
+		</div>
+		<!--foot结束-->
+		<div class="copy">
+			<div class="main">
+				<div class="copy_top">
+					<div class="copy_top_left">
+						<a href="#">中国( 简体中文/CNY )</a>
+					</div>
+					<div class="copy_top_right">
+						<a href="#">用户隐私</a>
+						<a href="#">用户协议</a>
+					</div>
+				</div>
+				<div class="copy_bot">
+					<div class="copy_bot_left">
+						<p>© 2013-2018 OnePlus. All Rights Reserved. (粤ICP备13080605号-4)</p>
+						<a href="#"><img src="../img/badge.png"/>粤公网安备 44030402001407号</a>
+					</div>
+					<div class="copy_bot_right">
+						<a href="#"><img src="../img/cnnic.png"/></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	function loadLabel(obj){
+		obj.mouseenter(function(){
+			$(this).find("a").css("color","#fff");
+			$(this).find("p").animate({width:this.clientWidth},200);
+			
+		}).mouseleave(function(){
+			$(this).find("a").css("color","#000");
+			$(this).find("p").animate({width:0},200);
+		})
+	}
+	loadLabel($(".foot_right>span"));
+	loadLabel($("#shap_shap"));
+	
+	
+	
+</script>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		
+	</head>
+	<body>
+		<div class="nav">
+			<div class="main clearfix">
+				<div class="nav_logo">
+					<a href="#"><img src="../img/oneplus.ico" /></a>
+				</div>
+				<div class="nav_center">
+					<ul class="clearfix">
+						<li><a href="#">Oneplus6</a></li>
+						<li><a href="#">商城</a></li>
+						<li><a href="#">服务</a></li>
+						<li><a href="#">博客</a></li>
+						<li><a href="#">论坛</a></li>
+					</ul>
+				</div>
+				<div class="nav_right">
+					<a href="#" id="regis">
+						<i class="iconfont">&#xe607;</i>
+						
+					</a>
+					<a href="#" id="shap"><i class="iconfont">&#xe658;</i></a>
+					<a href="#"><i class="iconfont">&#xe627;</i></a>
+					
+					<div class="regis">
+						<ul>
+							<li><a href="#">订单</a></li>
+							<li><a href="#">账户</a></li>
+							<li><a href="#">推荐有礼</a></li>
+							<li><a href="#">登录</a></li>
+						</ul>
+					</div>
+					<div class="shap">
+						<p>您的购物车里没有商品！</p>
+						<span><a href="#" id="shap_shap">购物车</a><p></p></span>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		<!--
+        	头部结束
+        -->
+        <div id="">
+        	
+        </div>
+	</body>
+</html>
+
+<script>
+	function navBlock(obj,ele){
+		obj.mouseover(function(){
+			ele.css("display","block");
+		}).mouseout(function(){
+			ele.css("display","none");
+		})
+	}
+	navBlock($("#regis"),$(".regis"));
+	navBlock($(".regis"),$(".regis"));
+	navBlock($("#shap"),$(".shap"));
+	navBlock($(".shap"),$(".shap"));
+	function loadLabel(obj){
+		obj.find("span").mouseenter(function(){
+			$(this).find("a").css("color","#fff");
+			$(this).find("p").animate({width:250},200);
+			
+		}).mouseleave(function(){
+			$(this).find("a").css("color","#000");
+			$(this).find("p").animate({width:0},200);
+		})
+	}
+	loadLabel($(".shap"));
+	
+	
+</script>

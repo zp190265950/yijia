@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一加登录页面</title>
+		<link rel="stylesheet" type="text/css" href="../head/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../head/css/head.css">
+		<link rel="stylesheet" type="text/css" href="../foot/foot.css">
+		<link rel="stylesheet" type="text/css" href="enter.css"/>
+		<script src="../js/jquery.min.js" ></script>
+		
+	</head>
+	<body>
+		<div id="head"></div>
+		<!--头部结束-->
+		<div class="content">
+        	<div class="content_from">
+        		<form action="" method="get">
+        			<h1>登录</h1>
+        			<div class="text clearfix">
+    					
+    					<input type="text" name="uname" id="uname" placeholder="手机号"/>
+        			</div>
+        			
+        			<div class="pwd">
+        				<input type="password" name="pwd" id="pwd" placeholder="密码" />
+        			</div>
+        			
+        			
+        			
+        			<div class="verif">
+        				<div class="verif_drag ">>></div>
+        				<div id="verif_color"></div>
+        			</div>
+        			
+        			<div class="btn">
+        				<input type="submit" value="登录" id="btn"/>
+        				<p></p>
+        			</div>
+        			
+        			<p><a href="#">注册</a></p>
+        		</form>
+        	</div>
+        </div>
+        <!---尾部结束-->
+		<div id="foot"></div>
+	</body>
+</html>
+<script type="text/javascript">
+	$("#head").load("../head/head.html");
+	$("#foot").load("../foot/foot.html");
+</script>
